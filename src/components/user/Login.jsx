@@ -76,8 +76,9 @@ function Login() {
             >
               LOGIN
             </button>
-
+		
             <Link to='/register' className="float-right mt-3">New User?</Link>
+		<Link to='/admin' className=" mt-3 tip">Admin</Link>
           </form>
 		  </div>
     </div>
