@@ -44,7 +44,7 @@ dispatch(logout);
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end ">
           <Nav >
-           <Link to="/home" className="pads mt-2">Home</Link>
+           <Link to="/" className="pads mt-2">Home</Link>
 
 <div  className=" dropdown pad mt-2">
     <span  >Pages <FaCaretDown  style={{margin : "-5px 0px 0px" }}/> </span>
@@ -76,12 +76,12 @@ dispatch(logout);
     </Dropdown>
     
   ) :
-  <Link to="/" className="btn pad text-white" id="login_btn">Login</Link>
+  <Link to="/login" className="btn pad text-white" id="login_btn">Login</Link>
   
   }
   </Fragment>
  
-  <Link to="/cart" className=" pad mt-2 ms-2">< FaShoppingCart/> </Link> 
+  <Link to="/cart" className=" pad mt-2 ps-4">< FaShoppingCart/> </Link> 
   {/* {cartItems.length} */}
   
   
