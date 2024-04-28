@@ -15,7 +15,7 @@ function Login() {
     const location = useLocation();
 
    const {loading, error, isAuthenticated} = useSelector(state => state.authState);
-   const redirect = location.search?'/home'+location.search.split('=')[1]:'/home';
+   const redirect = location.search?'/'+location.search.split('=')[1]:'/';
 
     const submitHandler = (e) => {
         e.preventDefault();
@@ -76,9 +76,9 @@ function Login() {
             >
               LOGIN
             </button>
-		
+
             <Link to='/register' className="float-right mt-3">New User?</Link>
-{/* 		<Link to='/admin' className=" mt-3 tip">Admin</Link> */}
+            <Link to='/admin' className=" mt-3 tip">Admin</Link>
           </form>
 		  </div>
     </div>
