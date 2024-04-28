@@ -22,9 +22,9 @@ export default function Sidebar () {
                     <NavDropdown title={
                         <i className='fa fa-product-hunt'> catelog</i>
                     }>
-                        {/* <NavDropdown.Item  onClick={() => navigate('/admin/categerious')} > <i className='fa fa-shopping-basket'> category</i></NavDropdown.Item> */}
+                        {/* <NavDropdown.Item  onClick={() => navigate('/admin/categerious')} > <i className='fa fa-shopping-basket'> category</i></NavDropdown.Item>  */}
                         <NavDropdown.Item  onClick={() => navigate('/admin/products')} > <i className='fa fa-plus'> products </i></NavDropdown.Item>
-                        {/* <NavDropdown.Item  onClick={() => navigate('/admin/category')} > <i className='fa fa-shopping-basket'> categeroies</i></NavDropdown.Item> */}
+                        {/* <NavDropdown.Item  onClick={() => navigate('/admin/category')} > <i className='fa fa-shopping-basket'> categeroies</i></NavDropdown.Item>  */}
                     </NavDropdown>
                 </li> 
 
