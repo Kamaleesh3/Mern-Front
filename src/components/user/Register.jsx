@@ -45,7 +45,7 @@ export default function Register() {
 
     useEffect(()=>{
         if(isAuthenticated) {
-            navigate('/home');
+            navigate('/');
             return
         }
         if(error){
