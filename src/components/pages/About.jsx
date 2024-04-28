@@ -2,15 +2,17 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import shipped from '../src/Images/Images/shipped.png'
-import boy from '../src/Images/Images/boy.png'
-import free from '../src/Images/Images/free.png'
-import best from '../src/Images/Images/best-seller.png'
-import Footer from './Footer';
+import shipped from './Images/Images/shipped.png'
+import boy from './Images/Images/boy.png'
+import free from './Images/Images/free.png'
+import best from './Images/Images/best-seller.png'
+import Header from '../layouts/Header';
+import {Link } from 'react-router-dom'
 
 function About() {
   return (
     <div className='container-fluid'>
+      <Header/>
     <div className='blog'>
       <h1>About us</h1>
       </div>
@@ -62,7 +64,7 @@ function About() {
        <div className='tips'>
         <h1>#New Arrivals</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quasi sit laboriosam error illum odio aspernatur asperiores ullam rerum veritatis? Sed perferendis amet, quo molestiae laboriosam accusantium. Sed, animi eos ea qui est beatae aut pariatur. Ullam quisquam, facere facilis, laborum soluta provident, corrupti culpa eligendi minima magnam ex dolorum.</p>
-        <button>Shop Now</button>
+        <button><Link to="/products" className='mentos'>Shop Now</Link></button>
        </div>
 
        </Col>
@@ -72,9 +74,7 @@ function About() {
 
        
        </div>
-       <div  style={{margin : "-70px 0px 0px"}}>
-       <Footer />
-       </div>
+       
        
     </div>
   )
